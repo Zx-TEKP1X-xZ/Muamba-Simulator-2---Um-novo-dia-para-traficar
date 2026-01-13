@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
 
+/*Começo logo*/
 .titulo{
     display: flex;
     justify-content: center;
@@ -11,7 +12,9 @@
     height: 70%;
     
 }
+/*Fim do logo*/
 
+/*Começo botão de iniciar jogo*/
 .botaoIniciar{
     display: flex;
     justify-content: center; 
@@ -24,7 +27,6 @@
     font-size: 20px;
     background: rgb(53, 4, 53);
     color: rgb(255, 255, 255);
-    text-shadow: ;
     border: 1px solid rgb(107, 4, 107);
     border-radius: 5px;
     box-shadow: 0px 0px 5px 2px rgb(107, 4, 107);
@@ -39,8 +41,9 @@
 #botaodeInicio:hover{
     transform: scale(1.05);
 }
+/*Fim botão de iniciar jogo*/
 
-
+/*Começo background*/
 body {
     margin: 0;
     min-height: 100vh;
@@ -62,4 +65,32 @@ body::before{
     transform: scale(1.1); /* evita bordas cortadas */
     z-index: -1;
 }
+/*Fim do background*/
+
+/*Botão mutar audio*/
+.muteAudio{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 300px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.muteAudio img{
+    height: 40px;
+    width: 40px;
+    transition: transform 0.2s;
+}
+
+.divMuteAudio{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.muteAudio img:hover{
+    transform: scale(1.1);
+}
+/*Fim botão mutar audio*/
 
